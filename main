@@ -1,0 +1,9 @@
+import pyqrcode 
+from pyqrcode import QRCode 
+  
+s=str(input("Enter site url:"))
+  
+url = pyqrcode.create(s) 
+  
+url.svg("qrcode.svg", scale = 8) 
+#code by Ark
